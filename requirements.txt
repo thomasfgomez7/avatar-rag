@@ -1,0 +1,6 @@
+semantic-link
+azure-cognitiveservices-speech
+azure-ai-formrecognizer 
+azure-search-documents 
+semantic-kernel
+flask
