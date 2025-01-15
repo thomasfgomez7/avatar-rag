@@ -1,13 +1,12 @@
-from flask import Flask, render_template, request
+from app import create_app
+import sys
+import os
+
+# Including the root directory 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 # Flask app
-app = Flask(__name__)
-
-# Home Page Avatar Hermess 
-@app.route('/')
-def index():
-    return render_template('home.html')
-
+app = create_app()
 
 if __name__ == '__main__':
-    app.run(port=1000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)

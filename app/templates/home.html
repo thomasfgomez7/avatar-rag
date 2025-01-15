@@ -1,0 +1,18 @@
+<!-- filepath: /c:/Users/thogomez/OneDrive - NTT DATA EMEAL/Desktop/Local PC NTT/NTT Proyectos/YPF/Avatar Genérico/avatar-rag/app/templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - AI Avatar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="button-container">
+        <h1>Welcome to AI Avatar</h1>
+        <form action="{{ url_for('avatar.avatar') }}">
+            <button type="submit" class="start-button">START</button>
+        </form>
+    </div>
+</body>
+</html>

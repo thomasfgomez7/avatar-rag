@@ -4,3 +4,4 @@ azure-ai-formrecognizer
 azure-search-documents 
 semantic-kernel
 flask
+dotenv
